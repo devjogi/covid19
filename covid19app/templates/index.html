@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo"><img src="{% static 'img/logofinal.png'%}"></a>
+        <div class="header-right">
+          <a class="active" href="#">Home</a>
+          <a href="#">symptoms</a>
+          <a href="#">About</a>
+        </div>
+    </div>
+    <video id="videoBG" poster="{% static 'img/videobg.png' %}" autoplay muted loop>
+        <source src="{% static 'video/video.mp4' %}">
+    </video>
+
+    <div class="main-block" >
+        hello
+    </div>
+        
+    
+</body>
+</html>
