@@ -9,11 +9,11 @@
 </head>
 <body>
     <div class="header">
-        <a href="#" class="logo"><img src="{% static 'img/logofinal.png'%}"></a>
+        <img src="{% static 'img/logofinal.png'%}">
         <div class="header-right">
           <a class="active" href="#">Home</a>
-          <a href="#">symptoms</a>
-          <a href="#">About</a>
+          <a href="/symptoms/">Symptoms</a>
+          <a href="/precaution/">Precautions</a>
         </div>
     </div>
     <video id="videoBG" poster="{% static 'img/videobg.png' %}" autoplay muted loop>
@@ -34,18 +34,16 @@
                 <li>Sore throat</li></ul></p>
                 <a href="/symptoms/"><button type="button" >Know More</button></a>
             </div>
+            <div class="middle">
+                <img src="{%static 'img/stayhome.png' %}">
+            </div>
             <div class="content-right">
                 <p><h1>Precautions</h1>
                     <ul><li>Fever</li>
-                    <li>Cough</li>
-                    <li>Shortness of breath or difficlity breathing</li>
-                    <li><h3>Other symptoms:</h3></li>
-                    <li>Tiredness</li>
-                    <li>Aches</li>
-                    <li>Runny nose</li>
-                    <li>Aches</li>
-                    <li>Runny nose</li>
-                    <li>Sore throat</li></ul></p>
+                    <li>Avoid close contact with people who are sick.</li>
+                    <li>Avoid touching your eyes, nose, and mouth.</li>
+                    <li>Stay home when you are sick.</li>
+                    <li>Clean and disinfect frequently-touched objects and surfaces using a regular household cleaning spray or wipe.</li></ul></p>
                     <a href="/precaution/"><button type="button" >Know More</button></a>
             </div>
         </div>

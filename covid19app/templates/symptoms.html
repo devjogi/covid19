@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <img src="{% static 'img/logofinal.png'%}">
+        <div class="header-right">
+            <a href="/">Home</a>
+            <a class="active" href="#">Symptoms</a>
+            <a href="/precaution/">Precautions</a>
+        </div>
+    </div>
+    <video id="videoBG" poster="{% static 'img/videobg.png' %}" autoplay muted loop>
+        <source src="{% static 'video/video.mp4' %}">
+    </video>
+
+    <div class="main-block" >
+        <div class="main-sym">
+        <h1>Overview</h1>
+        <h3>Coronavirus</h3>
+        <p>Coronaviruses are a family of viruses that can cause illnesses such as the common cold, severe acute respiratory syndrome (SARS) and Middle East respiratory syndrome (MERS). In 2019, a new coronavirus was identified as the cause of a disease outbreak that originated in China.</p>
+
+        <p>The virus is now known as the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The disease it causes is called coronavirus disease 2019 (COVID-19).</p>
+
+        <p>Cases of COVID-19 have been reported in a growing number of countries, including the U.S. Public health groups, such as the World Health Organization (WHO) and the U.S. Centers for Disease Control and Prevention (CDC), are monitoring the situation and posting updates on their websites. WHO declared a global pandemic in March 2020. These groups have also issued recommendations for preventing and treating the illness.
+
+        <h3>When to see a doctor</h3>
+        <p>Contact your doctor or clinic right away if you have COVID-19 symptoms, you've been exposed to someone with COVID-19, or you live in or have traveled from an area with ongoing community spread of COVID-19 as determined by CDC and WHO. Call your doctor ahead to tell him or her about your symptoms and recent travels and possible exposure before you go to your appointment.</p>
+            
+        <p>Anyone with respiratory symptoms who hasn't been in an area with ongoing community spread can contact his or her doctor or clinic for further recommendations and guidance. Let your doctor know if you have other chronic medical conditions. As the pandemic progresses, it's important to make sure health care is available for those in greatest need.</p>
+
+        <h3>Causes</h3>
+        <p>It's unclear exactly how contagious the new coronavirus is. It appears to spread from person to person among those in close contact. It may be spread by respiratory droplets released when someone with the    virus coughs or sneezes.</p>
+
+        <p>It may also be spread if a person touches a surface with the virus on it and then touches his or her mouth, nose or eyes.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

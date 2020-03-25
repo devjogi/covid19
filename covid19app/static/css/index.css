@@ -59,14 +59,15 @@ body{
 }
 .main-block{
     background-color: rgba(0 , 0, 0, 0.6);
-    height: 89.5vh;
+    height: 89.8vh;
     color: white;
 }
 
 .content-left{
     background-color: white;
     color: black;
-    margin: 2% 6%;
+    margin: 2% ;
+    margin-left: 6%;
     padding: 20px 80px;
     width: 30%;
     float: left;
@@ -81,14 +82,36 @@ body{
     padding-bottom: 2px;
     /* border-bottom: 2px solid red; */
 }
+.middle{
+    background-color: white;
+    color: black;
+    margin: 2%;
+    padding: 20px 60px;
+    width: 20%;
+    float: left;
+    border-radius: 4px;
+}
+.middle img{
+    width: 100%;
+}
 .content-right{
     background-color: white;
     color: black;
-    margin: 2% 6%;
+    margin: 2% ;
+    margin-right: 6%;
     padding: 20px 80px;
     width: 30%;
     float: right;
     border-radius: 4px; 
+}
+.content-right li{
+    margin-bottom: 5px;
+}
+.content-right h1{
+    color: green;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+
 }
 button{
     margin: 10px;
@@ -168,6 +191,27 @@ button:hover{
     }
 }
 
-
-
-
+/* .main-sym{
+    margin: 50px;
+} */
+.main-sym h1{
+    /* margin: 50px; */
+    font-size: 35px;
+    padding: 15px;
+}
+.main-sym h3{
+    padding: 15px;
+    font-size: 23px;
+}
+.main-sym p{
+    padding: 10px;
+    word-spacing: 2px;
+}
+/* .main-sym ul{
+    padding: 10px;
+    word-spacing: 2px;
+} */
+.main-sym li{
+    padding: 7px 10px;
+    word-spacing: 2px;
+}

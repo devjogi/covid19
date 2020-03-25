@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <img src="{% static 'img/logofinal.png'%}">
+        <div class="header-right">
+            <a href="/">Home</a>
+            <a href="/symptoms/">Symptoms</a>
+            <a class="active" href="#">Precautions</a>
+        </div>
+    </div>
+    <video id="videoBG" poster="{% static 'img/videobg.png' %}" autoplay muted loop>
+        <source src="{% static 'video/video.mp4' %}">
+    </video>
+
+    <div class="main-block" >
+        <div class="main-sym">
+            <h1>Prevention</h1>
+                <p>Although there is no vaccine available to prevent infection with the new coronavirus, you can take steps to reduce your risk of infection. WHO and CDC recommend following these precautions for avoiding COVID-19:</p>
+                
+                <ol>
+                <li>Avoid large events and mass gatherings.</li>
+                <li>Avoid close contact (about 6 feet) with anyone who is sick or has symptoms.</li>
+                <li>Keep distance between yourself and others if COVID-19 is spreading in your community, especially if you have a higher risk of serious illness.</li>
+                <li>Wash your hands often with soap and water for at least 20 seconds, or use an alcohol-based hand sanitizer that contains at least 60% alcohol.</li>
+                <li>Cover your mouth and nose with your elbow or a tissue when you cough or sneeze. Throw away the used tissue.</li>
+                <li>Avoid touching your eyes, nose and mouth if your hands aren't clean.</li>
+                <li>Avoid sharing dishes, glasses, bedding and other household items if you're sick.</li>
+                <li>Stay home from work, school and public areas if you're sick, unless you're going to get medical care. Avoid taking public transportation if you're sick.</li></ol>
+                
+                <h3>WHO also recommends that you:</h3>
+                <ul>
+                <li>Avoid eating raw or undercooked meat or animal organs.</li>
+                <li>Avoid contact with live animals and surfaces they may have touched if you're visiting live markets in areas that have recently had new coronavirus cases.</li>
+                </ul>
+
+                <h3>Travel</h3>
+                <p>
+                If you're planning to travel internationally, first check the CDC and WHO websites for updates and advice. Also look for any health advisories that may be in place where you plan to travel. You may also want to talk with your doctor if you have health conditions that make you more susceptible to respiratory infections and complications.</p>
+
+        </div>
+            
+    </div>
+    
+</body>
+</html>
