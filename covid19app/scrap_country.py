@@ -3,18 +3,21 @@ from matplotlib import pyplot as plt
 import requests
 import csv
 
+
 def scrap(name):
     path = 'https://www.worldometers.info/coronavirus/country/'
     path = path+name
-    path = path+''
+    path = path+'/'
     source = requests.get(
-        'https://www.worldometers.info/coronavirus/country/').text
+        path).text
     soup = BeautifulSoup(source, 'lxml')
     data = soup.find_all('div', attrs={'id': 'maincounter-wrap'})
     dict = {}
     for i in data:
-        s = str(i.span.text)
-        dict[(i.h1.text).strip()] = s.strip()
+        s = (str(i.span.text))
+        k = ((i.h1.text).strip())[:-1]
+        k = k.replace(" ", "_")
+        dict[k] = s.strip()
     return dict
 
 
