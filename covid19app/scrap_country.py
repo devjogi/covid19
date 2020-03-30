@@ -21,4 +21,4 @@ def scrap(name):
     return dict
 
 
-print(scrap('brazil'))
+# print(scrap('brazil'))
